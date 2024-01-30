@@ -1,0 +1,27 @@
+.*.sw*
+
+*.lic
+
+*.h5
+
+*.pickle
+
+*.sif
+
+*.pyc
+
+*.parquet
+
+.ipynb_checkpoints
+
+*geo-f2k
+
+*.tmp
+
+*.pdf
+
+venv3
+
+*.json
+
+# Keep some config files
