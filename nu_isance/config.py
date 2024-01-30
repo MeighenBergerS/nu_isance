@@ -6,6 +6,7 @@
 import logging
 from typing import Dict, Any
 import yaml
+import numpy as np
 
 _baseconfig: Dict[str, Any]
 
@@ -25,6 +26,16 @@ _baseconfig = {
         "log file handler": "nuisance.log",
         # Dump experiment config to this location
         "config location": "nuisance.txt",
+    },
+    ###########################################################################
+    # Oscillation setup
+    ###########################################################################
+    "oscillation": {
+        # If to use pre-calculated grids
+        "precalc": False,
+        "energy grid": np.logspace(-2, 2, 1000),
+        "angle grid": np.linspace(-1, 1., 400),
+        "matter": True,
     },
 }
 

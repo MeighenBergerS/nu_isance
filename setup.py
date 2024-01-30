@@ -27,7 +27,7 @@ setup(
     ],
     extras_require={
         "interactive": ["nbstripout", "matplotlib", "jupyter", "tqdm"],
-        "advanced": ["mceq"],
+        "advanced": ["mceq", ],
     },
     packages=["nu_isance"],
     package_data={'nu_isance': ["data/*.pkl"]},

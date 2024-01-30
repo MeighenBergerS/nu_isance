@@ -9,15 +9,21 @@ from typing import Union
 from  time import time
 import numpy as np
 import sys
+import yaml
 
 # Package modules
 # ---------------------------
 from .config import config
-from .halo import Halo
+from .nu_oscillations import NuOsc
 
 
 # unless we put this class in __init__, __name__ will be nuisance.nuisance
-_log = logging.getLogger("nuisance")
+_log = logging.getLogger("")
+
+# TODO: Make this an option in the config!
+# Suppressing the numba logger
+numba_logger = logging.getLogger('numba')
+numba_logger.setLevel(logging.WARNING)
 
 
 class Nuisance(object):
@@ -31,7 +37,8 @@ class Nuisance(object):
         """Initializes the nuisance class
         params
         ------
-        userconfig: Configuration dictionary or path to yaml file which specifies configuration
+        userconfig: Configuration dictionary or
+        path to yaml file which specifies configuration
 
         raises
         ------
@@ -82,6 +89,51 @@ class Nuisance(object):
         _log.setLevel(logging.DEBUG)
         _log.info("Starting")
         _log.info("Welcome to nuisance. I'm here to help")
-        _log.info("Please note more information on functions can be fetched by using .__doc__!")
-        self.halo = Halo()
+        _log.info(
+            "Please note more information on" +
+            " functions can be fetched by using .__doc__!"
+        )
+        self.osc = NuOsc()
         _log.info("Setup took %.f seconds" % (start - time()))
+
+    def close(self):
+        """ Wraps up the program
+        Parameters
+        ----------
+        None
+        Returns
+        -------
+        None
+        """
+        _log.info('---------------------------------------------------')
+        _log.info('---------------------------------------------------')
+        # A new simulation
+        if config["general"]["enable logging"]:
+            _log.debug(
+                "Dumping run settings into %s",
+                config["general"]["config location"],
+            )
+            with open(config["general"]["config location"], "w") as f:
+                yaml.dump(config, f)
+            _log.debug("Finished dump")
+            _log.info("................................................................................")
+            _log.info("................................................................................")
+            _log.info(".......................................#@@@@@@#,................................")
+            _log.info("............................*@@/ ....... ...@@@*****,... @@.....................")
+            _log.info("........................@..***********************@@*******...#@................")
+            _log.info(".....................@******%@@( . . . . ..@@@********@********.  %.............")
+            _log.info("...................@****@....... ............... /@*****@*********.@............")
+            _log.info(".................@***@.. ....... ....... ....... ....@***@*********.@...........")
+            _log.info(".................**@...(((((.... .........((((.. .....@***@*********@...........")
+            _log.info("................@**.(((((&#((...&&&& ...((&((((((((. ..@**//********/.@(........")
+            _log.info("................&**@((((((((.... ........((((&#(((((((.@**@**********@**,/......")
+            _log.info("................@@*@&((. .......,&&&.... .......((((((@***@**********@***@......")
+            _log.info("...............@**@**@/......... ............... ..(@%**@@*,*******/*@@@@.......")
+            _log.info("............@ ******@***@@                      .@@***@(**************@.........")
+            _log.info("..........@@@  @@@*****@*****(@@@@/.....%@@@@******@@@ @,************@..........")
+            _log.info("...........@@   @@@@@@.....@@&****************@@#..@ .@  @  (/***(@(............")
+            _log.info("........................................................@ @.....................")
+            _log.info("................................................................................")
+            _log.info("Bye!")
+        # Closing log
+        logging.shutdown()

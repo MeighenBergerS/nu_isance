@@ -3,7 +3,7 @@
 from .nu_isance import Nuisance
 from .config import config
 from .errors import __init__
-from .halo import __init__
+from .nu_oscillations import __init__
 from .utils import __init__
 
 __all__ = (Nuisance, config)

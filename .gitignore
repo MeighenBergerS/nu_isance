@@ -24,4 +24,8 @@ venv3
 
 *.json
 
+*.log
+
+*.txt
+
 # Keep some config files

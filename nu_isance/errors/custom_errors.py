@@ -34,3 +34,7 @@ class UnknownModelError(NoTraceBackWithLineNumber):
 class UnphysicalError(NoTraceBackWithLineNumber):
     """ input values aren't physical"""
     pass
+
+class NotImplementedError(NoTraceBackWithLineNumber):
+    """ This has not yet been implemented. Please contact the authors"""
+    pass
