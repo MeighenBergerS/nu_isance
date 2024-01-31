@@ -27,7 +27,7 @@ Please cite this [software](https://github.com/MeighenBergerS/nu_isance) using
   title = {{Nuisance}: Dark Matter Halo},
   url = {https://github.com/MeighenBergerS/nu_isance},
   version = {0.0.1},
-  year = {2023},
+  year = {2024},
 }
 ```
 
