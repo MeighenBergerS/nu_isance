@@ -28,4 +28,8 @@ venv3
 
 *.txt
 
+dist
+
+nuisance.egg-info
+
 # Keep some config files
