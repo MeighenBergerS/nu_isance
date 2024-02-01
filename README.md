@@ -59,4 +59,4 @@ Install using pip:
 ```python
 pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ nuisance==1.0.1
 ```
-[The PyPi webpage](https://test.pypi.org/project/nuisance/1.0.0/)
+[The PyPi webpage](https://test.pypi.org/project/nuisance/1.0.1/)
