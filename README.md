@@ -16,7 +16,7 @@ Authors:
 
 Welcome to Nuisance!
 
-![WeirdLogo](./images/weird_logo.png)
+![WeirdLogo](./images/weird_logo.jpg)
 
 A python package to simulate neutrino oscillations.
 
