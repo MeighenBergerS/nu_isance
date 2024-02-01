@@ -24,12 +24,18 @@ setup(
         "numpy",
         "scipy",
         "pandas",
+        "tqdm",
+        "numba"
     ],
     extras_require={
-        "interactive": ["nbstripout", "matplotlib", "jupyter", "tqdm"],
-        "advanced": ["mceq", ],
+        "interactive": ["nbstripout", "matplotlib", "jupyter"],
     },
-    packages=["nu_isance"],
+    packages=[
+        "nu_isance",
+        "nu_isance.utils",
+        "nu_isance.errors",
+        "nu_isance.nu_oscillations"
+    ],
     package_data={'nu_isance': ["data/*.pkl"]},
     include_package_data=True
 )
