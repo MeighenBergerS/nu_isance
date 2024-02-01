@@ -46,7 +46,7 @@ Please cite this [software](https://github.com/MeighenBergerS/nu_isance) using
   author = {Stephan Meighen-Berger},
   title = {{Nuisance}: Dark Matter Halo},
   url = {https://github.com/MeighenBergerS/nu_isance},
-  version = {1.0.1},
+  version = {1.0.2},
   year = {2024},
 }
 ```
@@ -57,6 +57,6 @@ To install use:
 
 Install using pip:
 ```python
-pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ nuisance==1.0.1
+pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ nuisance==1.0.2
 ```
-[The PyPi webpage](https://test.pypi.org/project/nuisance/1.0.1/)
+[The PyPi webpage](https://test.pypi.org/project/nuisance/1.0.2/)

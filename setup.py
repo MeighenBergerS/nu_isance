@@ -11,7 +11,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="nuisance",
-    version="1.0.1",
+    version="1.0.2",
     description="Quick and dirty neutrino oscillations",
     long_description=README,
     long_description_content_type="text/markdown",
