@@ -44,7 +44,7 @@ Please cite this [software](https://github.com/MeighenBergerS/nu_isance) using
 ```
 @software{nuisance@github,
   author = {Stephan Meighen-Berger},
-  title = {{Nuisance}: Dark Matter Halo},
+  title = {{Nuisance}: Neutrino Oscillations},
   url = {https://github.com/MeighenBergerS/nu_isance},
   version = {1.0.2},
   year = {2024},
