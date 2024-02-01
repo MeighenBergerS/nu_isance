@@ -29,12 +29,12 @@ from nu_isance import Nuisance, config
 
 # A nusciance instance with options
 config['oscillation']['matter'] = True
-nusciance = Nuisance()
+nuisance = Nuisance()
 
 # Accessing the simulation
-nu_e_e = nusciance.osc.oscillation_prob_e[0]  # For nu_e -> nu_e
-nu_e_mu = nusciance.osc.oscillation_prob_e[1]  # For nu_e -> nu_mu
-nu_e_tau = nusciance.osc.oscillation_prob_e[2]  # For nu_e -> nu_tau
+nu_e_e = nuisance.osc.oscillation_prob_e[0]  # For nu_e -> nu_e
+nu_e_mu = nuisance.osc.oscillation_prob_e[1]  # For nu_e -> nu_mu
+nu_e_tau = nuisance.osc.oscillation_prob_e[2]  # For nu_e -> nu_tau
 ```
 
 

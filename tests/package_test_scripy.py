@@ -11,7 +11,7 @@ from nu_isance import Nuisance, config
 
 # A nusciance instance with options
 config['oscillation']['matter'] = True
-nusciance = Nuisance()
+nuisance = Nuisance()
 
 # Fetching the used grids
 e_grid = config["oscillation"]["energy grid"]
@@ -25,9 +25,9 @@ zenith = np.rad2deg(np.arccos(cosZ))
 _, axs = plt.subplots(1, 3, figsize=(12, 3), sharey=True)
 # ------------------------------------------------------------------------------
 # Grids
-nu_e_e = nusciance.osc.oscillation_prob_e[0]
-nu_e_mu = nusciance.osc.oscillation_prob_e[1]
-nu_e_tau = nusciance.osc.oscillation_prob_e[2]
+nu_e_e = nuisance.osc.oscillation_prob_e[0]
+nu_e_mu = nuisance.osc.oscillation_prob_e[1]
+nu_e_tau = nuisance.osc.oscillation_prob_e[2]
 Xfine, Yfine = np.meshgrid(e_grid, cosZ)
 # ------------------------------------------------------------------------------
 # Nu_e -> Nu_e
