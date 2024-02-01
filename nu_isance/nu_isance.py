@@ -25,6 +25,9 @@ _log = logging.getLogger("")
 numba_logger = logging.getLogger('numba')
 numba_logger.setLevel(logging.WARNING)
 
+matplotlib_logger = logging.getLogger('matplotlib')
+matplotlib_logger.setLevel(logging.WARNING)
+
 
 class Nuisance(object):
     """ the Nuisance class. This object is the interface to the

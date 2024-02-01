@@ -9,5 +9,5 @@ from .utils import __init__
 __all__ = (Nuisance, config)
 
 # Version of the nuisance package
-__version__ = "0.0.1"
+__version__ = "1.0.0"
 __author__ = "Stephan Meighen-Berger"

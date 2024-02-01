@@ -11,12 +11,12 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="nuisance",
-    version="0.0.1",
-    description="Neutrino Flux",
+    version="1.0.0",
+    description="Quick and dirty neutrino oscillations",
     long_description=README,
     long_description_content_type="text/markdown",
     author="Stephan Meighen-Berger",
-    author_email="stephan.meighenberger@gmail.com",
+    author_email="stephan.meighenberger@unimelb.edu.au",
     url='https://github.com/MeighenBergerS/nu_isance',
     license="GNU",
     install_requires=[

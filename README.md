@@ -18,6 +18,19 @@ Welcome to Nuisance!
 
 A python package to simulate neutrino fluxes.
 
+Examples are given in the notebook folder, but here is a basic script to get
+you going:
+
+```
+# Module import
+from nu_isance import Nuisance, config
+
+# A nusciance instance with options
+config['oscillation']['matter'] = True
+nusciance = Nuisance()
+```
+
+
 ## Citation <a name="citation"></a>
 
 Please cite this [software](https://github.com/MeighenBergerS/nu_isance) using
