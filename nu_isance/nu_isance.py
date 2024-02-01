@@ -92,10 +92,6 @@ class Nuisance(object):
         _log.setLevel(logging.DEBUG)
         _log.info("Starting")
         _log.info("Welcome to nuisance. I'm here to help")
-        _log.info(
-            "Please note more information on" +
-            " functions can be fetched by using .__doc__!"
-        )
         self.osc = NuOsc()
         _log.info("Setup took %.f seconds" % (start - time()))
 
